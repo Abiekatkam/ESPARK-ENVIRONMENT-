@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--Fira);
+}
+:root {
+  --ivory: #f5eec2;
+  --medium_green: #73a24e;
+  --light_green: #a9c25d;
+
+  --white: #e8e8ee;
+  --gray: #dad7cd;
+  --black: #111;
+
+  --Fira: "Fira Sans", sans-serif;
+  --Lobster: "Lobster", cursive;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  background-color: var(--black);
+  font-family: var(--Fira);
+  color: var(--black);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  position: sticky;
+  z-index: 3;
+  top: 0;
+  background-color: transparent;
+  background: rgba(0, 0, 0, 0.78);
+}
+
+nav > h2 {
+  font-size: 2rem;
+  font-family: var(--Lobster);
+  font-weight: 400;
+  color: var(--ivory);
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+}
+
+nav > ul > li > a {
+  color: var(--ivory);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+nav > ul > li > a:hover {
+  border-bottom: 2px solid var(--light_green);
+  color: var(--light_green);
+  transition: all 0.2s ease;
+}
+
+.header {
+  background-image: url(Images/bg_image.jpg);
+  width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.atmosphere {
+  background-image: url(Images/atmosphere_bg.jpg);
+  width: 100%;
+  position: relative;
+
+  width: 100%;
+  min-height: 75vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hydrosphere {
+  background-image: url(Images/hydrosphere.jpg);
+  width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.lithosphere {
+  background-image: url(Images/lithosphere.jpg);
+  width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.biosphere {
+  background-image: url(Images/biosphere_bg.jpg);
+  width: 100%;
+  position: relative;
+  width: 100%;
+  min-height: 75vh;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg_header {
+  position: absolute;
+  z-index: 2;
+  top: 33%;
+  left: 35%;
+  text-align: center;
+}
+
+.bg_text {
+  font-size: 7rem;
+  color: var(--ivory);
+  font-family: var(--Lobster);
+  font-weight: 500;
+  border-bottom: 1px solid var(--ivory);
+  margin-bottom: 1rem;
+}
+
+.bg_para {
+  font-size: 1.65rem;
+  color: var(--ivory);
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/*  */
+
+footer {
+  width: 100%;
+  background-color: var(--black);
+  color: var(--ivory);
+  height: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer > h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+footer > p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+footer > p > span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--light_green);
+}
+
+/*  */
+
+.headline_dark {
+  font-size: 2rem;
+  border-bottom: 2px solid var(--light_green);
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--light_green);
+  display: inline;
+  margin-bottom: 1rem;
+}
+
+.paragraph_dark {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 50%;
+  color: var(--medium_green);
+}
+
+.headline_light {
+  font-size: 1.65rem;
+  border-bottom: 2px solid var(--light_green);
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--light_green);
+  display: inline;
+  margin-bottom: 1rem;
+}
+
+.paragraph_light {
+  font-size: 1.2rem;
+  font-weight: 500;
+  width: 100%;
+  padding: 1.5rem;
+  color: var(--medium_green);
+}
+
+.container {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 45vh;
+  height: fit-content;
+}
+
+.dark {
+  background-color: var(--black);
+}
+
+.margin_border {
+  border: 1px solid var(--light_green);
+  width: 65%;
+  margin: 0 auto;
+}
+
+.card_container {
+  margin: 1.5rem 0;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  min-height: 300px;
+  gap: 1.5rem;
+}
+
+.card_photo {
+  width: 220px;
+  height: 295px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.img {
+  width: 220px;
+  height: 210px;
+  border-radius: 100%;
+  border: 8px solid var(--light_green);
+}
+
+.text {
+  color: var(--ivory);
+  font-size: 1.54rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card_photo:hover .img {
+  border: 8px solid var(--black);
+  transition: all 0.2s ease-in;
+}
+.card_photo:hover .text {
+  color: var(--light_green);
+  transition: all 0.2s ease-in;
+}
+
+.partition_divider {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.partition_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+}
+
+.partition_container > div {
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.partition_container > div > img {
+  width: 100%;
+  height: 400px;
+  align-items: center;
+  justify-content: center;
+}
+
+.listed_order {
+  list-style: none;
+  width: 50%;
+  color: var(--medium_green);
+}
+
+.listed_order > li {
+  margin: 1rem 0 0.75rem 0;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
